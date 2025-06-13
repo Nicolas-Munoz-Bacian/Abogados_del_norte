@@ -420,7 +420,7 @@ a{
 }
 
 .Título-nav{
- margin-bottom: 30px;
+ margin-bottom: 38px;
  font-family: var(--fuente-calibri-negrita);
   color: var(--color-secundario);
   font-size: 1.2rem;
@@ -444,7 +444,40 @@ a{
   color: var(--color-primario);
 }
 
+.icono_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primario);
+  padding: 5px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.icono_red {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
 /* Contenido textual uniforme */
+
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  gap: 10px; /* Espacio entre íconos y botón */
+  flex-wrap: wrap;
+}
+
+.info_nav {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre íconos y botón */
+  flex-wrap: wrap;
+}
+
+
 .info p {
   margin: 0 0 4px 0;
   font-size: 0.95rem;
@@ -527,7 +560,7 @@ a{
 
 .presentación__logo{
     display: flex;
-    width: 60px;
+    width: 50px;
     height:auto;
     flex-wrap: wrap;
     object-fit: contain;
