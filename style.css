@@ -34,6 +34,11 @@ header{
     align-items: center;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--color-primario);
     height: auto;
@@ -43,6 +48,7 @@ body {
 .logo{
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
 .logo_Obersvatorio img{
@@ -60,7 +66,7 @@ body {
     background-color: none;
     color: var(--color-primario);
     font-family: var(--fuente-calibri);
-    font-size: 60%;
+    font-size: 50%;
     width: 500px;
     height: 160px;
     padding: 6px;
@@ -252,7 +258,7 @@ a{
 /**----CARRUSEL----**/
 
 .slider{
-    width: 100%;
+    width: auto;
     overflow: hidden;
     padding: 2rem 0;
 }
@@ -266,9 +272,11 @@ a{
 
 .slide-track {
     display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
     width: calc(250px * 16);
     animation: scroll 20s linear infinite;
-    margin: 3px 0px;
+    will-change: transform;
 }
 
 .slide-track:hover {
@@ -307,8 +315,8 @@ a{
 }
 
 .card-item-contenido {
-    width: 250px;
     flex: 0 0 auto;
+    width: 250px;
 }
 
 .card_integrante {
@@ -534,6 +542,7 @@ a{
 
 .footer{
     background-color: var(--color-azul);
+    margin-top: auto;
     padding: 12px;
     height: auto;
     display: flex;

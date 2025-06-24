@@ -43,6 +43,7 @@ body {
 .logo{
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
 .logo_Obersvatorio img{
@@ -60,7 +61,7 @@ body {
     background-color: none;
     color: var(--color-primario);
     font-family: var(--fuente-calibri);
-    font-size: 60%;
+    font-size: 50%;
     width: 500px;
     height: 160px;
     padding: 6px;
@@ -531,6 +532,7 @@ a{
 
 .footer{
     background-color: var(--color-azul);
+    margin-top: auto;
     padding: 12px;
     height: auto;
     display: flex;

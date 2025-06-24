@@ -60,7 +60,7 @@ body {
     background-color: none;
     color: var(--color-primario);
     font-family: var(--fuente-calibri);
-    font-size: 60%;
+    font-size: 50%;
     width: 500px;
     height: 160px;
     padding: 6px;
@@ -137,20 +137,38 @@ a{
     color: black;
 }
 
-/*-------------Breakpoints-------------*/
+/*-------------BREAKPOINTS-------------*/
 
-@media (max-width: 767px) {
-    .desktop, .tablet {
-        display: none;
-    }
-    .movil {
-        display: block;
-    }
+/* ========== CELULAR (de 400px) ========== */
+@media (max-width: 400px) and (max-height: 950px){
+  .slide-track {
+    gap: 20px;
+  }
 
-    nav ul a {
-        font-size: 16px;
-        display: flex;
-    }
+  .scroll-card {
+    width: 90vw;
+    height: 100px;
+    padding: 1rem;
+  }
+
+  .scroll-card h2 {
+    font-size: 1rem;
+  }
+
+  .scroll-card_parrafo {
+    font-size: 0.9rem;
+  }
+
+  .icono {
+    width: 32px;
+    height: 32px;
+  }
+
+  .lista-vertical li {
+    font-size: 0.85rem;
+    width: 100%;
+    text-align: justify;
+  }
 }
 
 /* ========== TABLET (de 768px a 1023px) ========== */
@@ -206,8 +224,10 @@ a{
 .slider {
     width: 100%;
     overflow: hidden;
-    padding: 2rem 0;
+    padding: none;
     background: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .Título_contenido {
@@ -221,10 +241,9 @@ a{
 /* Track en movimiento automático */
 .slide-track {
     display: flex;
-    width: max-content;
-    animation: scroll 100s linear infinite;
-    margin: 50px 0px;
-    gap: 40px
+    min-width: 100%;
+    animation: scroll 60s linear infinite;
+    gap: 2rem;
 }
 
 /* Lista de tarjetas */
@@ -257,8 +276,8 @@ a{
 /* Tarjeta de servicios */
 .scroll-card {
   flex: 0 0 auto;
-  width: 300px;
-  height: 430px;
+  width: min(90vw, 300px);
+  height: 480px;
   border: 3px solid var(--color-dorado, #c5a300);
   border-radius: 20px;
   background: white;
@@ -307,6 +326,25 @@ a{
   width: 90%;
 }
 
+.lista-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* Centra horizontalmente la lista */
+    gap: 5px;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;              /* Controla el ancho total */
+    max-width: 280px;
+}
+
+.lista-vertical li {
+    list-style: none;
+    text-align: justify;     /* Justifica el texto */
+    width: 100%;             /* Ocupa todo el contenedor centrado */
+    color: black;
+    font-size: 0.95rem;
+}
+
 /* Animación para que el carrusel se mueva horizontalmente */
 @keyframes scroll {
     0% {
@@ -325,7 +363,7 @@ a{
 
     .scroll-card {
         width: 220px;
-        height: auto;
+        height: 650px;
     }
 
     .scroll-card h2 {
@@ -489,6 +527,7 @@ a{
 
 .footer{
     background-color: var(--color-azul);
+    margin-top: auto;
     padding: 12px;
     height: auto;
     display: flex;
