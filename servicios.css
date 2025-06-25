@@ -166,7 +166,8 @@ a{
 
   .lista-vertical li {
     font-size: 0.85rem;
-    width: 100%;
+    width: 105%;
+    max-width: 280px;
     text-align: justify;
   }
 }
@@ -269,14 +270,14 @@ a{
 }
 
 .service-info {
-    font-size: 0.95rem;
+    font-size: 0.90rem;
     color: black;
 }
 
 /* Tarjeta de servicios */
 .scroll-card {
   flex: 0 0 auto;
-  width: min(90vw, 300px);
+  width: min(94vw, 330px);
   height: 480px;
   border: 3px solid var(--color-dorado, #c5a300);
   border-radius: 20px;
@@ -308,39 +309,37 @@ a{
 
 .scroll-card_parrafo {
       text-align: justify;
-    font-size: 0.95rem;
+    font-size: 0.90rem;
     color: black;
   margin-bottom: 1rem;
 }
 
 .scroll-card .scroll-card_parrafo {
-  text-align: justify;
+  text-align:justify;
 }
 
 .scroll-card .lista-vertical li {
   list-style: none;
   padding: 0;
-  padding-left: 0;
   margin: 0 auto;
   text-align: center;
-  width: 90%;
+  width: 103%;
+  max-width: 300px;
 }
 
 .lista-vertical {
     display: flex;
     flex-direction: column;
     align-items: center;     /* Centra horizontalmente la lista */
-    gap: 5px;
-    margin: 0 auto;
-    padding: 0;
-    width: 90%;              /* Controla el ancho total */
-    max-width: 280px;
+    gap: 6px;
+    width: 102%;              /* Controla el ancho total */
+    max-width: 300px;
 }
 
 .lista-vertical li {
     list-style: none;
     text-align: justify;     /* Justifica el texto */
-    width: 100%;             /* Ocupa todo el contenedor centrado */
+    width: 105%;             /* Ocupa todo el contenedor centrado */
     color: black;
     font-size: 0.95rem;
 }
@@ -380,6 +379,7 @@ a{
 .Contenido_de_lado_Consulta_juridica{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 20px;
   gap: 20px;
   font-family: var(--fuente-calibri);
   padding: 10px;
