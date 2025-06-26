@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Gracias por tu mensaje</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="gracias.css">
     <link rel="shortcut icon" href="assets/Estudio juridico del Norte (PNG).png" type="image/x-icon">
 </head>
 <body>
@@ -34,37 +34,19 @@
             </ul  class="ul_menu">
         </menu>
     </nav>
-    
-    </header>
 
-    <div class="Contenido_central">
-        <div class="contenido-contacto">
-            <div class="info-contacto">
-                <form action="https://formsubmit.co/estudi20@estudiojuridicodelnorte.cl" method="POST">
-                    <h1 class="Título_contenido">Dudas o consultas:</h1>
-                    
-                    <input type="text" name="nombre" placeholder="Nombre" required class="campo">
-                    
-                    <input type="email" name="email" placeholder="Email" required class="campo">
-
-                        <!-- Redirigir a gracias.html -->
-                    <input type="hidden" name="_next" value="gracias.html">
-
-                        <!-- ID de seguridad de FormSubmit -->
-                    
-                    <input type="hidden" name="_formsubmit_id" value="2fb721d85be2b6cd72fc382a73cdb817">
-                    
-                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-                    
-                    <input class="btn_enviar" type="submit" id="btn-enviar" name="enviar" value="Enviar mensaje">
-                </form>
-            </div>
-
-            
+  <main class="contenido">
+    <section class="presentación">
+      <div class="presentación_contenido_texto">
+        <h1 class="Título_contenido">¡Gracias por tu mensaje!</h1>
+        <p></p>
+        <div style="display: flex; justify-content: center; padding: 20px;">
+            <a href="index.html" class="btn_gracias">Volver al Inicio</a>
         </div>
-   
-    </div>
-    
+      </div>
+    </section>
+  </main>
+
 </body>
 
 <div class="Contenido_de_lado_Consulta_juridica">
@@ -127,4 +109,5 @@
         </h2>
     </div>
 </footer>
+
 </html>
