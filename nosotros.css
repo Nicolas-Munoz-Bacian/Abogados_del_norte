@@ -34,6 +34,11 @@ header{
     align-items: center;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--color-primario);
     height: auto;
@@ -480,7 +485,7 @@ a{
 
 .info p {
   margin: 0 0 4px 0;
-  font-size: 0.95rem;
+  font-size: 0.90rem;
   font-family: var(--fuente-principal);
 }
 

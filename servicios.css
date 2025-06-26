@@ -401,7 +401,6 @@ a{
 .Contenido_de_lado_Consulta_juridica{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  margin-top: 20px;
   gap: 20px;
   font-family: var(--fuente-principal);
   padding: 10px;
@@ -498,7 +497,7 @@ a{
 
 .info p {
   margin: 0 0 4px 0;
-  font-size: 0.95rem;
+  font-size: 0.90rem;
   font-family: var(--fuente-principal);
 }
 

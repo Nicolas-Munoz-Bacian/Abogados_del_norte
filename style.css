@@ -1,4 +1,4 @@
-@import url('http://127.0.0.1:5501/index.css');
+@import url('');
 
 :root{
     --color-primario:#ffff;
@@ -30,6 +30,11 @@ header{
     background-color: var(--color-azul);
     justify-content: space-around;
     align-items: center;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -200,6 +205,14 @@ a{
     align-items: center;
 }
 
+.text-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: none; /* opcional para espacio */
+}
+
 .Título_contenido {
     text-align: center;
     font-size: 2rem;
@@ -288,7 +301,7 @@ a{
 }
 
 .user-info {
-    font-size: 0.95rem;
+    font-size: 0.90rem;
     color: black;
 }
 
@@ -341,8 +354,6 @@ a{
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 }
-
-
 
 /**----CONSULTA----**/
 
@@ -445,7 +456,7 @@ a{
 
 .info p {
   margin: 0 0 4px 0;
-  font-size: 0.95rem;
+  font-size: 0.90rem;
   font-family: var(--fuente-principal);
 }
 

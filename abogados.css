@@ -10,6 +10,8 @@
     --color-dorado:#efb810;
     --color-gris-oscuro:#636571;
     --color-azul:#1b4279;
+    --fuente-base: 'Libre Franklin', sans-serif;
+    --fuente-negrita: 'Libre Franklin', sans-serif;
     --fuente-principal:'Libre Franklin', 'Segoe UI', 'Arial', sans-serif;
     --fuente-principal-negrita:'Inter', 'Segoe UI', 'Arial', sans-serif;
     --fuente-Sicret-Mono-PERSONAL:'Sicret Mono PERSONAL', bold;
@@ -30,6 +32,11 @@ header{
     background-color: var(--color-azul);
     justify-content: space-around;
     align-items: center;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -211,7 +218,6 @@ a{
 .Título_contenido {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 1rem;
     font-family: var(--fuente-principal-negrita);
     color: var(--color-secundario);
 }
@@ -419,7 +425,7 @@ a{
 
 .info p {
   margin: 0 0 4px 0;
-  font-size: 0.95rem;
+  font-size: 0.90rem;
   font-family: var(--fuente-principal);
 }
 
