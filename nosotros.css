@@ -12,8 +12,8 @@
     --color-azul:#1b4279;
     --fuente-base: 'Libre Franklin', sans-serif;
     --fuente-negrita: 'Libre Franklin', sans-serif;
-    --fuente-calibri:'calibri', sans serif;
-    --fuente-calibri-negrita:'calibri', bold;
+    --fuente-principal:'Libre Franklin', 'Segoe UI', 'Arial', sans-serif;
+    --fuente-principal-negrita:'Inter', 'Segoe UI', 'Arial', sans-serif;
     --fuente-Sicret-Mono-PERSONAL:'Sicret Mono PERSONAL', bold;
 }
 
@@ -37,7 +37,7 @@ header{
 body {
     background-color: var(--color-primario);
     height: auto;
-    font-family: var(--fuente-calibri);
+    font-family: var(--fuente-principal);
 }
 
 .logo{
@@ -60,7 +60,7 @@ body {
     position: relative;
     background-color: none;
     color: var(--color-primario);
-    font-family: var(--fuente-calibri);
+    font-family: var(--fuente-principal);
     font-size: 50%;
     width: 500px;
     height: 160px;
@@ -101,7 +101,7 @@ body {
     background-color: var(--color-primario);
     position: relative;
     width: 160%;
-    font-family: var(--fuente-calibri-negrita);
+    font-family: var(--fuente-principal-negrita);
     color: var(--color-secundario);
     border: none;
     border-radius: 5px;
@@ -192,7 +192,7 @@ a{
 
     .btn:hover {
         background-color: var(--color-secundario);
-        font-family: var(--fuente-calibri-negrita);
+        font-family: var(--fuente-principal-negrita);
     }
 }
 
@@ -240,7 +240,7 @@ a{
 
 .presentación_contenido_texto{
     font-size: 20px;
-    font-family: var(--fuente-calibri-negrita);
+    font-family: var(--fuente-principal-negrita);
     color: var(--color-cuarto);
     display: flex;
     flex-direction: column;
@@ -252,7 +252,7 @@ a{
     justify-content: center;
     align-items: center;
     align-content: center;
-    font-family: var(--fuente-calibri);
+    font-family: var(--fuente-principal);
     text-align: justify;
     margin: 1rem 0rem 0rem 0rem;
 }
@@ -279,7 +279,7 @@ a{
     text-align:justify;
     justify-content: center;
     flex-wrap: wrap-reverse;
-    font-family: var(--fuente-calibri);
+    font-family: var(--fuente-principal);
 }
 
 .Contenido_nosotros {
@@ -385,7 +385,7 @@ a{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  font-family: var(--fuente-calibri);
+  font-family: var(--fuente-principal);
   padding: 10px;
 }
 
@@ -405,7 +405,7 @@ a{
 }
 
 .Título-3 {
-  font-family: var(--fuente-calibri-negrita);
+  font-family: var(--fuente-principal-negrita);
   color: var(--color-secundario);
   font-size: 1.2rem;
   display: block;
@@ -413,7 +413,7 @@ a{
 }
 
 .Título-CONTACTO{
-  font-family: var(--fuente-calibri-negrita);
+  font-family: var(--fuente-principal-negrita);
   color: var(--color-secundario);
   font-size: 1.2rem;
   display: block;
@@ -422,7 +422,7 @@ a{
 
 .Título-nav{
  margin-bottom: 38px;
- font-family: var(--fuente-calibri-negrita);
+ font-family: var(--fuente-principal-negrita);
   color: var(--color-secundario);
   font-size: 1.2rem;
   display: block;
@@ -433,7 +433,7 @@ a{
   padding: 5px 10px;
   background-color: var(--color-primario);
   color: var(--color-secundario);
-  font-family: var(--fuente-calibri-negrita);
+  font-family: var(--fuente-principal-negrita);
   border: none;
   border-radius: 5px;
   font-size: 1.5rem;
@@ -478,11 +478,10 @@ a{
   flex-wrap: wrap;
 }
 
-
 .info p {
   margin: 0 0 4px 0;
   font-size: 0.95rem;
-  font-family: var(--fuente-calibri);
+  font-family: var(--fuente-principal);
 }
 
 .ul_menu_horizontal {
@@ -581,7 +580,7 @@ a{
     position: initial;
     font-size: 34%;
     color: var(--color-primario);
-    font-family: var(--fuente-calibri);
+    font-family: var(--fuente-principal);
     text-decoration: none;
     display: flex;
     flex-direction: column;
