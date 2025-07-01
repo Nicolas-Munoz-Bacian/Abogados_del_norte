@@ -23,18 +23,27 @@
 
 /**---HEADER--**/
 
-header{
-    box-sizing: content-box;
-    position: initial;
-    display: flex;
+header {
+    width: 100vw; /* Asegura ancho completo */
     background-color: var(--color-azul);
+    display: flex;
     justify-content: space-around;
     align-items: center;
+    box-sizing: border-box;
 }
 
 html, body {
-    max-width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
+    flex-direction: column;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body {
@@ -221,29 +230,6 @@ a{
     color: var(--color-secundario);
 }
 
-/**----BOTÓN DE VUELTA A INICIO----**/
-
-.btn_gracias {
-    background-color: var(--color-primario);
-    font-family: var(--fuente-principal-negrita);
-    color: var(--color-secundario);
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    padding: 12px 24px;
-    width: 100%;
-    max-width: 200px; /* Evita que sea demasiado ancho en pantallas grandes */
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
-}
-
-.btn_gracias:hover {
-    background-color: var(--color-secundario);
-    color: var(--color-primario);
-}
-
 /**----CONSULTA----**/
 
 .Contenido_de_lado_Consulta_juridica{
@@ -394,13 +380,15 @@ a{
 
 /**----FOOTER----**/
 
-.footer{
+.footer {
+    width: 100vw; /* Asegura ancho completo */
     background-color: var(--color-azul);
     margin-top: auto;
     padding: 12px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .contenido_footer{
@@ -449,4 +437,41 @@ a{
     text-decoration: none;
     display: flex;
     flex-direction: column;
+}
+
+/**----BOTÓN DE VUELTA A INICIO----**/
+
+.presentación_contenido_texto {
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 130px;
+}
+
+.Título_contenido {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: var(--fuente-principal-negrita);
+    color: var(--color-secundario);
+}
+
+.btn_gracias {
+    background-color: var(--color-primario);
+    font-family: var(--fuente-principal-negrita);
+    color: var(--color-secundario);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 12px 24px;
+    width: 100%;
+    max-width: 200px; /* Evita que sea demasiado ancho en pantallas grandes */
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.btn_gracias:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
 }
