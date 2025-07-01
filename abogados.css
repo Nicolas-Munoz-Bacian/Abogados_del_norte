@@ -104,6 +104,7 @@ html, body {
 }
 
 .btn {
+    display: inline-flex;
     background-color: var(--color-primario);
     position: relative;
     width: 160%;
@@ -116,15 +117,23 @@ html, body {
     margin: 2px 2px;
     cursor: pointer;
     justify-content: center;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-flow: column-reverse;
+    align-items: center;
+    text-align: center;
+
   }
 
 .btn:hover {
     background-color: var(--color-secundario);
     color: var(--color-primario);
     display: flex;
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .btn {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 nav a{
