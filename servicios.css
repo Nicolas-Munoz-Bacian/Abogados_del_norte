@@ -35,24 +35,20 @@ header {
 }
 
 html, body {
-    height: 100%;
+    height: 100vh;
     max-width: 100vw;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     flex-direction: column;
+    background-color: var(--color-primario);
+    font-family: var(--fuente-principal);
 }
 
 .page-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-body {
-    background-color: var(--color-primario);
-    height: auto;
-    font-family: var(--fuente-principal);
 }
 
 .logo{
@@ -239,7 +235,7 @@ a{
 /**----CARRUSEL----**/
 
 .slider {
-  height: 500px;
+  height: 520px;
     width: 100%;
     overflow: hidden;
     padding: none;
@@ -266,8 +262,13 @@ a{
   margin-top: 1rem;
     display: flex;
     width: max-content; /* Permite ajuste automático */
-    animation: scroll 70s linear infinite;
+    animation: scroll 50s linear infinite;
     gap: 2rem;
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
 }
 
 /* Lista de tarjetas */
@@ -392,7 +393,7 @@ a{
 
     .scroll-card {
         width: 220px;
-        height: 480px;
+        height: 500px;
     }
 
     .scroll-card h2 {
@@ -433,7 +434,7 @@ a{
   }
 
   .scroll-card {
-    height: 100px;
+    height: 440px;
     width: 280px;
     padding: 1rem;
   }
@@ -467,6 +468,11 @@ a{
     .tablet {
         display: block;
     }
+
+         .slider {
+    height: 470px;
+
+  }
 }
 
 /* ========== ESCRITORIO ========== */
@@ -497,6 +503,7 @@ a{
         background-color: var(--color-secundario);
         font-family: var(--fuente-principal-negrita);
     }
+
 }
 
 /**----CONSULTA----**/
@@ -664,7 +671,7 @@ a{
 /**----FOOTER----**/
 
 .footer {
-    width: 100vw; /* Asegura ancho completo */
+    width: 100%; /* Asegura ancho completo */
     background-color: var(--color-azul);
     margin-top: auto;
     padding: 12px;

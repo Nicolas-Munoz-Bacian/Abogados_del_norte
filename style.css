@@ -33,28 +33,20 @@ header {
 }
 
 html, body {
-    height: 100%;
+    height: 100vh;
     max-width: 100vw;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     flex-direction: column;
     background-color: var(--color-primario);
+    font-family: var(--fuente-principal);
 }
 
 .page-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-main {
-  flex: 1;
-}
-
-body {
-    height: auto;
-    font-family: var(--fuente-principal);
 }
 
 .logo{
@@ -181,6 +173,7 @@ a{
 
 /* ========== ESCRITORIO (desde 1024px en adelante) ========== */
 @media (min-width: 1024px) {
+    
     .movil, .tablet {
         display: none;
     }
@@ -219,14 +212,6 @@ a{
     align-items: center;
 }
 
-.text-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: none; /* opcional para espacio */
-}
-
 .Título_contenido {
     text-align: center;
     font-size: 2rem;
@@ -259,6 +244,7 @@ a{
     min-width: max-content;
     width: calc((300px + 2rem) * 8 * 2);
     transform: translateZ(0); /* Mejora rendimiento con GPU */
+    backface-visibility: hidden;
 }
 
 .slide-track:hover {
@@ -279,6 +265,7 @@ a{
 .slider img{
     width: 100%;
     height: 300px;
+    max-height: 300px;
     border-radius: 18px;
     justify-content: center;
     display: flex;
@@ -331,6 +318,34 @@ a{
 }
 
 /* Responsividad */
+
+/* ========== CELULAR O TABLET HORIZONTAL ========== */
+@media (max-width: 1024px) and (orientation: landscape) {
+  .slide-track {
+    animation: scroll 35s linear infinite; /* Más corto para dar dinamismo */
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    gap: 1rem;
+  }
+
+  .card-item-contenido {
+    width: 260px;
+  }
+
+  .slider img {
+    height: 200px; /* Aumentado para evitar recorte */
+    object-fit: cover;
+  }
+
+  .user-name {
+    font-size: 1.1rem;
+  }
+
+  .user-info p {
+    font-size: 0.9rem;
+  }
+}
 
 /* MÓVILES */
 @media (max-width: 780px) {
@@ -389,8 +404,9 @@ a{
     }
 
     .slider img {
-        width: 120%;
+        width: 100%;
         height: 300px;
+        object-fit: cover;
     }
 
     .user-name {
@@ -427,7 +443,6 @@ a{
 
 /* ✅ Hace que el contenido se expanda y deje el footer al final */
 .contenido_consulta {
-  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -599,6 +614,34 @@ a{
 @media (min-width: 1441px) {
   .Contenido_de_lado_Consulta_juridica {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ========== CELULAR O TABLET HORIZONTAL ========== */
+@media (max-width: 1024px) and (orientation: landscape) {
+  .slide-track {
+    animation: scroll 35s linear infinite; /* Más corto para dar dinamismo */
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    gap: 1rem;
+  }
+
+  .card-item-contenido {
+    width: 260px;
+  }
+
+  .slider img {
+    height: 200px; /* Aumentado para evitar recorte */
+    object-fit: cover;
+  }
+
+  .user-name {
+    font-size: 1.1rem;
+  }
+
+  .user-info p {
+    font-size: 0.9rem;
   }
 }
 
