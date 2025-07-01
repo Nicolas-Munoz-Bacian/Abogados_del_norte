@@ -239,12 +239,14 @@ a{
 /**----CARRUSEL----**/
 
 .slider {
+  height: 500px;
     width: 100%;
     overflow: hidden;
     padding: none;
-    background: #fff;
-    position: relative;
+    background: var(--color-primario);
+    margin-bottom: 2rem;
     z-index: 1;
+    position: relative;
 }
 
 .slider:hover .slide-track {
@@ -261,6 +263,7 @@ a{
 
 /* Track en movimiento automático */
 .slide-track {
+  margin-top: 1rem;
     display: flex;
     width: max-content; /* Permite ajuste automático */
     animation: scroll 70s linear infinite;
@@ -283,7 +286,7 @@ a{
 }
 
 .card_integrante {
-    background: #f9f9f9;
+    background: var(--color-primario);
     border-radius: 12px;
     padding: 1rem;
     text-align: center;
@@ -389,7 +392,7 @@ a{
 
     .scroll-card {
         width: 220px;
-        height: 590px;
+        height: 480px;
     }
 
     .scroll-card h2 {
@@ -398,6 +401,26 @@ a{
 
     .scroll-card_parrafo {
         font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1024px) {
+    .scroll-card {
+        height: 440px;
+    }
+}
+
+/* Para notebooks medianos (opcional, refuerzo de distribución horizontal) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .scroll-card {
+        height: 440px;
+    }
+}
+
+/* Para notebooks grandes o pantallas mayores a 1440px */
+@media (min-width: 1441px) {
+    .scroll-card {
+        height: 440px;
     }
 }
 
