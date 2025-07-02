@@ -169,6 +169,7 @@ a{
     .tablet {
         display: block;
     }
+    
 }
 
 /* ========== ESCRITORIO (desde 1024px en adelante) ========== */
@@ -236,8 +237,16 @@ a{
 }
 
 .presentación{
-margin: 2rem 0 2rem 0;
+margin: 4.7rem 0 2rem 0;
 }
+
+/* TABLET */
+@media (min-width: 781px) and (max-width: 1024px) {
+.presentación{
+  margin: 10rem 0 9rem 0;
+}
+}
+
 
 /**----CONSULTA----**/
 

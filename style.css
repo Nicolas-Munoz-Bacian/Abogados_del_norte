@@ -272,7 +272,7 @@ a{
 }
 
 .slider img{
-    width: 100%;
+    width: 290px;
     height: 300px;
     max-height: 300px;
     border-radius: 18px;
@@ -436,7 +436,7 @@ a{
     }
 
     .slide-track, .slide-list {
-        gap: 8rem;
+        gap: 2rem;
     }
 
     .user-image {
@@ -446,6 +446,16 @@ a{
     .user-name {
         font-size: 1.2rem;
     }
+}
+
+/* Para notebooks grandes o pantallas mayores a 1440px */
+@media (min-width: 1441px) {
+    .slide-track {
+        gap: 1.5rem;
+        width: calc((220px + 1.5rem) * 8 * 2);
+        scroll-snap-type: x mandatory;
+}
+
 }
 
 /**----CONSULTA----**/
